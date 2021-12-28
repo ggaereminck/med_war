@@ -1,0 +1,2 @@
+class BuildingResource < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class StoreUnitsController < ApplicationController
+end

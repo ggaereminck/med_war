@@ -1,0 +1,2 @@
+class StoreResourcesController < ApplicationController
+end

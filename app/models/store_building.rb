@@ -1,0 +1,2 @@
+class StoreBuilding < ApplicationRecord
+end

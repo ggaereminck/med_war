@@ -1,0 +1,2 @@
+class StoreBuildingsController < ApplicationController
+end

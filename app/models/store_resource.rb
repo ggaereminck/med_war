@@ -1,0 +1,2 @@
+class StoreResource < ApplicationRecord
+end
