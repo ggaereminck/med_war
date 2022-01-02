@@ -4,6 +4,7 @@ class CreateBuildingResources < ActiveRecord::Migration[6.1]
       t.integer :amount
       t.integer :collect_cooldown
       t.datetime :last_collected_at
+      t.integer :building_id
 
       t.timestamps
     end

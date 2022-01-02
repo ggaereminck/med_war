@@ -7,6 +7,7 @@ class CreateStoreUnits < ActiveRecord::Migration[6.1]
       t.integer :attack
       t.integer :defense
       t.integer :unlock_level
+      t.integer :store_id
 
       t.timestamps
     end

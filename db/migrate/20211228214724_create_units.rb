@@ -5,7 +5,7 @@ class CreateUnits < ActiveRecord::Migration[6.1]
       t.integer :attack
       t.integer :defense
       t.string :img
-      t.Army :belongs_to
+      t.integer :army_id
 
       t.timestamps
     end

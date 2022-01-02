@@ -5,6 +5,7 @@ class CreateStoreBuildings < ActiveRecord::Migration[6.1]
       t.string :name
       t.string :description
       t.integer :unlock_level
+      t.integer :store_id
 
       t.timestamps
     end
