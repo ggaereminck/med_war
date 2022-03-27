@@ -2,6 +2,7 @@ import React from "react";
 import ArmyContainer from "./ArmyContainer";
 import BuildingContainer from "./BuildingContainer";
 import StoreContainer from "./StoreContainer";
+import { useState, useEffect } from "react";
 
 
 export default function Kingdom(){
@@ -11,7 +12,7 @@ export default function Kingdom(){
         fetch('/kingdoms')
         .then(res => res.json())
         .then(data => setKingdomData(data))
-    })
+    }, [])
 
     return(
     <div>
