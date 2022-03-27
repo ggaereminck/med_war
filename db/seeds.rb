@@ -18,4 +18,6 @@ quarry = Store_Building.create(cost: 300, name: 'Quarry', description: 'Produces
 
 forge = Store_Building.create(cost: 300, name: 'Forge', description: 'Produces Iron, collection time is 25 minutes.', unlock_level: 3, store_id: store1.id)
 
-stable = Store_Building.create(cost: 500, name: 'Stable', description: 'Produces Lancers, collection time is 20 minutes')
+stable = Store_Building.create(cost: 500, name: 'Stable', description: 'Produces Lancers, collection time is 20 minutes.', unlock_level: 3, store_id: store1.id)
+
+fletcher = Store_Building.create(cost: 400, name: 'Fletcher', description: 'Produces Archers, collection time is 20 minutes.', unlock_level: 3, store_id: store1.id)
