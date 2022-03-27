@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+store1 = Store.create()
+
+lumberMill = Store_Building.create(cost: 50, name: 'Lumber Mill', description: 'Produces Wood, collection time is 20 minutes.', unlock_level: 1, store_id: store1.id)
+
+farm = Store_Building.create(cost: 100, name: 'Farm', description: 'Produces Food, collection time is 20 minutes.', unlock_level: 1, store_id: store1.id)
+
+barracks = Store_Building.create(cost: 150, name: 'Barracks', description: 'Produces Swordsmen, collection time is 20 minutes.', unlock_level: 2, store_id: store1.id)
+
