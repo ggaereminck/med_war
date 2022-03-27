@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function StoreBox(){
+export default function StoreUnit(){
     return(
         <div>
-            Store Box
+            
         </div>
     )
 }

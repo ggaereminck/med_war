@@ -1,20 +1,21 @@
 import React from "react";
-import StoreBox from "./StoreBox";
+import StoreBuilding from "./StoreBuilding";
 import { useState, useEffect } from "react";
 
 export default function StoreContainer(){
-    const[storeData, setStoreData] = useState([])
+    const[storeBuildingData, setStoreBuildingData] = useState([])
 
     useEffect(() => {
-        fetch('/stores')
+        fetch('/stores/3')
         .then(res => res.json())
-        .then(data => setStoreData(data))
+        .then(data => setStoreBuildingData([data]))
     }, [])
 
     return(
         <div>
-            Store Container
-            <StoreBox/>
+            <h2>Store:</h2>
+            {storeBuildingData.map(store => 
+                <StoreBuilding store={store}/>)}
         </div>
     )
 }
